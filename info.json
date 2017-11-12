@@ -1,0 +1,11 @@
+{
+  "name": "Loader-Furnaces",
+  "version": "1.0.0",
+  "title": "Loader Furnaces",
+  "author": "Nanabell",
+  "contact": "https://github.com/Nanabell/Loader-Furnaces",
+  "homepage": "",
+  "description": "Loader Furnaces reworked! Now also with Bobs support!",
+  "factorio_version": "0.15",
+	"dependencies": ["base >= 0.15.34", "LoaderRedux >= 1.1.2", "?boblogistics >= 0.15.6", "?bobtech >= 0.15.3"]
+}
