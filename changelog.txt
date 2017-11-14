@@ -1,0 +1,6 @@
+1.0.1
+ - Small fix to technologies to ensure that the purple Loader Furnace cant crash the game if for some reason the green Loader is not preset
+
+1.0.0
+ - Initial Release
+ - Support for bob's logistics & bob's tech
