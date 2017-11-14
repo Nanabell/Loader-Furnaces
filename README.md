@@ -10,7 +10,7 @@ Loader Furnaces also support [bob's logistics](https://mods.factorio.com/mods/Bo
 
 ![image](https://fred.moe/dha.png)
 # Changelog
- - `1.0.0` - Initial Release, support for bobs logistics
+Check the [changelog.txt file](https://github.com/Nanabell/Loader-Furnaces/blob/master/changelog.txt) or on the [Mod page](https://mods.factorio.com/mods/Nanabell/Loader-Furnaces)
 
 # Credits
 Loader Furnaces is a port/rewrite of [Loader Furnace](https://mods.factorio.com/mods/darkfrei/Loader-Furnace) by darkfrei
