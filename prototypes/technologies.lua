@@ -91,7 +91,7 @@ if data.raw.technology["green-loader"] then
     }})
 end
 
-if data.raw.technology["purple-loader"] then
+if data.raw.technology["green-loader"] and data.raw.technology["purple-loader"] then
     data:extend({{
         type = "technology",
         name = "purple-loader-furnace",
