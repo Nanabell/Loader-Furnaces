@@ -19,7 +19,6 @@ function add_furnace_tech(name, prerequisites, unit, order)
     return {
         type = "technology",
         name = name.name .. "-" .. tier,
-        localised_name = {"technology-name." .. name},
         icon = "__Loader-Furnaces__/graphics/technology/loader-furnace/" .. name.name .. "-" .. name.tier .. ".png",
         icon_size = 100,
         effects = {{type = "unlock-recipe", recipe = name.name .. "-" .. name.tier}},
