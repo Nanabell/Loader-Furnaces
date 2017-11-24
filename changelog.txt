@@ -1,3 +1,11 @@
+2.0.1
+ - Actually require you to Reserach Tech to unlock your Loader Furnaces
+
+2.0.0
+ - Rewrote the whole mod for easier managing
+ - added a libs folder to easily add new prototypes
+ - sort prototypes by mod now
+
 1.0.1
  - Small fix to technologies to ensure that the purple Loader Furnace cant crash the game if for some reason the green Loader is not preset
 
