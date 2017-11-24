@@ -3,7 +3,7 @@ function add_furnace_recipe(result, sorting, ingredients)
         type = "recipe",
         name = result,
         ingredients = ingredients,
-        enabled = true,
+        enabled = false,
         category = sorting.category,
         subgroup = sorting.subgroup,
         order = sorting.order,
