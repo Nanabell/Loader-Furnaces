@@ -1,3 +1,7 @@
+2.0.2
+ - Allow Loader Furnaces to smelt their normal counterpart as fallback
+ - Fixed stone recipe to require 4 stones not just 2
+
 2.0.1
  - Actually require you to Reserach Tech to unlock your Loader Furnaces
 
