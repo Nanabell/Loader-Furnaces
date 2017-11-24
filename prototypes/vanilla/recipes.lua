@@ -50,7 +50,7 @@ data:extend(
         add_smelting_recipe(
             {result = "stone-brick", amount = 2},
             {category = "lf-smelting", order = "a", subgroup = "lf-smelting"},
-            {{name = "stone", amount = 2}},
+            {{name = "stone", amount = 4}},
             7
         ),
         -- Iron Plate
