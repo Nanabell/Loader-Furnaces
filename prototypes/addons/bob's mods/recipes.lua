@@ -8,7 +8,7 @@ if data.raw.item["lf-furnace-04"] then
                 "lf-furnace-04",
                 {order = "a[loader-furnace]-d[04]", subgroup = "lf-furnace"},
                 {
-                    {"purple-loader", 2},
+                    {"green-loader", 2},
                     {"steel-plate", 50},
                     {"lf-furnace-03", 3},
                     {"processing-unit", 5},
@@ -129,7 +129,7 @@ if data.raw.item["lf-chemical-01"] then
                     "lf-chemical-04",
                     {order = "a[loader-furnace]-d[04]", subgroup = "lf-chemical-furnace"},
                     {
-                        {"purple-loader", 2},
+                        {"green-loader", 2},
                         {"steel-plate", 50},
                         {"lf-chemical-03", 3},
                         {"processing-unit", 5},
@@ -161,7 +161,7 @@ if data.raw.item["lf-chemical-01"] then
                         "lf-chemical-05",
                         {order = "a[loader-furnace]-e[05]", subgroup = "lf-chemical-furnace"},
                         {
-                            {"purple-loader", 2},
+                            {"green-loader", 2},
                             {"steel-plate", 50},
                             {"lf-chemical-04", 3},
                             {"processing-unit", 50},
