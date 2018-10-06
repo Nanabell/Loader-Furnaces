@@ -1,11 +1,11 @@
 {
   "name": "Loader-Furnaces",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "title": "Loader Furnaces",
   "author": "Nanabell",
   "contact": "https://github.com/Nanabell/Loader-Furnaces",
   "homepage": "",
-  "description": "Loader Furnaces reworked! Now also with Bobs support!. Adds Loader Furnaces aswell as Chemical & Mixing Loader Furnaces to proccess all your metals at belt-speed",
-  "factorio_version": "0.15",
-	"dependencies": ["base >= 0.15.34", "LoaderRedux >= 1.1.2", "?boblogistics >= 0.15.6", "?bobtech >= 0.15.3"]
+  "description": "Loader Furnaces that a built to smelt a full belt of input inserted via a loder from LoaderRedux.",
+  "factorio_version": "0.16",
+	"dependencies": ["base >= 0.16.51", "LoaderRedux >= 1.3.0", "?bobplates >= 0.16.3", "?Dp77s-FactorioPlus-Refining >= 1.3.1"]
 }

@@ -1,3 +1,8 @@
+3.0.0
+ - Remove all manual smelting recipes.
+ - Loader-Furnaces will now try to discover all smelting recipes at the start of the game and add a optimized counterpart for the Loader Furnaces
+ - Fix the Coloring of Tier 4 and 5 from Bob's logistics
+
 2.0.2
  - Allow Loader Furnaces to smelt their normal counterpart as fallback
  - Fixed stone recipe to require 4 stones not just 2
