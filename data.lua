@@ -21,7 +21,8 @@ for _, recipe in pairs(data.raw["recipe"]) do
       output.name = "lf-" + recipe.name
 
       -- Calculate the Least common multiple to properly scale output with ingredients
-      multiplier = lcm(output.result_count, table.min(table.map(ingredients, function(v) return v[2] end)))
+      lcm = math.lcm(output.result_count, table.min(table.map(ingredients, function(v) return v[2] end)))
+      multiplier = lcm / math.maxOf(output.result_count, table.min(table.map(ingredients, function(v) return v[2] end)))
       if multiplier == 1 then multiplier = 2 end
 
       -- apply multiplier to output and ingredients

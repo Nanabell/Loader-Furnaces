@@ -10,3 +10,8 @@ end
 function math.lcm(m, n)
   return (m ~= 0 and n ~= 0) and m * n / math.gcd(m, n) or 0
 end
+
+function math.maxOf(m, n)
+  if m > n then return m end
+  return n
+end
