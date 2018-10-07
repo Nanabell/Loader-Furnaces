@@ -28,7 +28,7 @@ for _, recipe in pairs(data.raw["recipe"]) do
       local multiplier = lcm / math.maxOf(output.result_count, minIngred_count)
 
       -- double the multiplier if its 1 and the result_count is also 1
-      if multiplier == 1 and output.result_count == 1 then multiplier = 2 end
+      if multiplier == 1 and (output.result_count == 1 or minIngred_count == 1) then multiplier = 2 end
 
       -- apply multiplier to output and ingredients
       output.result_count = output.result_count * multiplier
