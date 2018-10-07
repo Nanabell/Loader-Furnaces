@@ -6,6 +6,7 @@ require("prototypes.recipes")
 require("prototypes.technologies")
 
 require("lib.recipes")
+require("lib.logic")
 require("lib.table")
 
 counter = 1
@@ -19,11 +20,15 @@ for _, recipe in pairs(data.raw["recipe"]) do
     if output.result then
       output.name = "lf-" + recipe.name
 
-      table.each(ingredients, function(v) v[2] = v[2] * math.ceil(2 / output.result_count) end)
-      output.result_count = 2
-      
-      --log('adding lf-smelting recipe "' + output.name + '" with ingredients = ' + serpent.line(ingredients) + ' and result = ' + serpent.line(output))
-      data:extend({add_smelting_recipe(output, {category = "lf-smelting", subgroup = "lf-smelting"}, ingredients, 2)})
+      -- Calculate the Least common multiple to properly scale output with ingredients
+      multiplier = lcm(output.result_count, table.min(table.map(ingredients, function(v) return v[2] end)))
+      if multiplier == 1 then multiplier = 2 end
+
+      -- apply multiplier to output and ingredients
+      output.result_count = output.result_count * multiplier
+      table.each(ingredients, function(v) v[2] = v[2] * multiplier end)
+
+      data:extend({add_smelting_recipe(output, {category = "lf-smelting", subgroup = "lf-smelting"}, ingredients, multiplier)})
     else
       log("recipe -" + recipe.anme + "- has more than one output. Recipe will be ignored")
     end
