@@ -6,7 +6,7 @@ require("prototypes.recipes")
 require("prototypes.technologies")
 
 require("lib.recipes")
-require("lib.logic")
+require("lib.math")
 require("lib.table")
 
 counter = 1
