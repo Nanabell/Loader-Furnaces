@@ -1,4 +1,4 @@
-function gcd(m, n)
+function math.gcd(m, n)
   while n ~= 0 do
     local q = m
     m = n
@@ -7,6 +7,6 @@ function gcd(m, n)
   return m
 end
 
-function lcm(m, n)
-  return (m ~= 0 and n ~= 0) and m * n / gcd(m, n) or 0
+function math.lcm(m, n)
+  return (m ~= 0 and n ~= 0) and m * n / math.gcd(m, n) or 0
 end
