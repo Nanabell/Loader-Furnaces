@@ -9,21 +9,26 @@ require("lib.recipes")
 require("lib.math")
 require("lib.table")
 
-counter = 1
+local counter = 1
 for _, recipe in pairs(data.raw["recipe"]) do
   if recipe.category == "smelting" then
     counter = counter + 1
     log('Found smelting recipe: "' + recipe.name + '"')
 
-    ingredients = get_ingredients(recipe, false)
-    output = get_result(recipe, false)
+    local ingredients = get_ingredients(recipe, false)
+    local output = get_result(recipe, false)
     if output.result then
       output.name = "lf-" + recipe.name
 
+      -- get the smallest ingredient count 
+      local minIngred_count = table.min(table.map(ingredients, function(v) return v[2] end))
+
       -- Calculate the Least common multiple to properly scale output with ingredients
-      lcm = math.lcm(output.result_count, table.min(table.map(ingredients, function(v) return v[2] end)))
-      multiplier = lcm / math.maxOf(output.result_count, table.min(table.map(ingredients, function(v) return v[2] end)))
-      if multiplier == 1 then multiplier = 2 end
+      local lcm = math.lcm(output.result_count, minIngred_count)
+      local multiplier = lcm / math.maxOf(output.result_count, minIngred_count)
+
+      -- double the multiplier if its 1 and the result_count is also 1
+      if multiplier == 1 and output.result_count == 1 then multiplier = 2 end
 
       -- apply multiplier to output and ingredients
       output.result_count = output.result_count * multiplier
