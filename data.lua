@@ -13,12 +13,12 @@ local counter = 1
 for _, recipe in pairs(data.raw["recipe"]) do
   if recipe.category == "smelting" then
     counter = counter + 1
-    log('Found smelting recipe: "' + recipe.name + '"')
+    log('Found smelting recipe: "' .. recipe.name .. '"')
 
     local ingredients = get_ingredients(recipe, false)
     local output = get_result(recipe, false)
     if output.result then
-      output.name = "lf-" + recipe.name
+      output.name = "lf-" .. recipe.name
 
       -- get the smallest ingredient count 
       local minIngred_count = table.min(table.map(ingredients, function(v) return v[2] end))
@@ -36,8 +36,8 @@ for _, recipe in pairs(data.raw["recipe"]) do
 
       data:extend({add_smelting_recipe(output, {category = "lf-smelting", subgroup = "lf-smelting"}, ingredients, multiplier)})
     else
-      log("recipe -" + recipe.anme + "- has more than one output. Recipe will be ignored")
+      log("recipe -" .. recipe.anme .. "- has more than one output. Recipe will be ignored")
     end
   end
 end
-log(counter + " total smelting recipes")
+log(counter .. " total smelting recipes")

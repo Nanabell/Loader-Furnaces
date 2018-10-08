@@ -4,7 +4,7 @@ for _, recipe in pairs(data.raw["recipe"]) do
     counter = counter + 1
   end
 end
-log(counter + " total smelting recipes")
+log(counter .. " total smelting recipes")
 
 -- fix bobs stupid belt speed changes in data-updates
 if settings.startup["bobmods-logistics-beltoverhaul"] and settings.startup["bobmods-logistics-beltoverhaul"].value == true then
