@@ -1,3 +1,6 @@
+3.0.2
+ - Fix Lua noob mistake to concat Strings with + instead of ..
+
 3.0.1
  - Use Least common multiple to calculate multiplier instead of trying to fit all into result_count 2. Thanks to usafphoenix
 
