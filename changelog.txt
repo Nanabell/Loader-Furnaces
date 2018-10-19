@@ -1,29 +1,68 @@
-3.0.2
- - Fix Lua noob mistake to concat Strings with + instead of ..
+---------------------------------------------------------------------------------------------------
+Version: 3.0.3
+Date: 19.10.2018
 
-3.0.1
- - Use Least common multiple to calculate multiplier instead of trying to fit all into result_count 2. Thanks to usafphoenix
+  Fixed:
+    - Use proper changelog.txt format to have an ingame changelog button
+---------------------------------------------------------------------------------------------------
+Version: 3.0.2
+Date: 8.10.2018
 
-3.0.0
- - Remove all manual smelting recipes.
- - Loader-Furnaces will now try to discover all smelting recipes at the start of the game and add a optimized counterpart for the Loader Furnaces
- - Fix the Coloring of Tier 4 and 5 from Bob's logistics
+  Fixed:
+    - Lua noob mistake to concat Strings with + instead of ..
+---------------------------------------------------------------------------------------------------
+Version: 3.0.1
+Date: 7.10.2018
 
-2.0.2
- - Allow Loader Furnaces to smelt their normal counterpart as fallback
- - Fixed stone recipe to require 4 stones not just 2
+  Changed:
+    - Use Least common multiple to calculate multiplier instead of trying to fit all into result_count 2. Thanks to usafphoenix
+---------------------------------------------------------------------------------------------------
+Version: 3.0.0
+Date: 6.10.2018
 
-2.0.1
- - Actually require you to Reserach Tech to unlock your Loader Furnaces
+  Added:
+    - Loader-Furnaces will now try to discover all smelting recipes at the start of the game and add a optimized counterpart for the Loader Furnaces
 
-2.0.0
- - Rewrote the whole mod for easier managing
- - added a libs folder to easily add new prototypes
- - sort prototypes by mod now
+  Fixed:
+    - Fix the Coloring of Tier 4 and 5 from Bob's logistics
 
-1.0.1
- - Small fix to technologies to ensure that the purple Loader Furnace cant crash the game if for some reason the green Loader is not preset
+  Removed:
+    - Remove all manual smelting recipes.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.2
+Date: ???
 
-1.0.0
- - Initial Release
- - Support for bob's logistics & bob's tech
+  Added:
+    - Allow Loader Furnaces to smelt their normal counterpart as fallback
+
+  Fixed:
+    - Stone recipe requires 4 stones not just 2
+---------------------------------------------------------------------------------------------------
+Version: 2.0.1
+Date: ???
+
+  Fixed:
+    - Actually require you to Reserach Tech to unlock your Loader Furnaces
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: ???
+
+  Added:
+    - added a libs folder to easily add new prototypes
+
+  Changed:
+    - Rewrote the whole mod for easier managing
+    - sort prototypes by mod now
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: ???
+
+  Fixed:
+    - Small fix to technologies to ensure that the purple Loader Furnace cant crash the game if for some reason the green Loader is not preset
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: ???
+
+  Added:
+    - Initial Release
+    - Support for bob's logistics & bob's tech
