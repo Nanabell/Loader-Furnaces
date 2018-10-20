@@ -12,7 +12,11 @@ def deploy_to_factorio():
     for file in os.listdir(mod_dir):
         if file.startswith("Loader-Furnaces"):
             print("Removing " + file)
-            os.remove(os.path.join(mod_dir, file))
+            try:
+                os.remove(os.path.join(mod_dir, file))
+            except PermissionError:
+                print("Factorio is still running. Please close Factorio first!")
+                return
 
     print("Building new Loader Furnaces")
     source = build.zip_files()
