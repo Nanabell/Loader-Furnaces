@@ -2,7 +2,7 @@ import json
 import os
 import zipfile
 
-excludes = [".gitignore", ".idea", ".vscode", ".git", "build.py", "deploy.py"]
+excludes = [".gitignore", ".idea", ".vscode", ".git", "build.py", "deploy.py", "__pycache__"]
 
 
 def get_archive_name(basedir: str):
