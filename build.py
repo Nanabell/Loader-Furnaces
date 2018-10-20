@@ -34,4 +34,5 @@ def zip_files():
     return output_file
 
 
-print(zip_files())
+if __name__ == "__main__":
+    zip_files()

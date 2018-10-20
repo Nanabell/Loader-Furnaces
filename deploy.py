@@ -26,4 +26,5 @@ def deploy_to_factorio():
     print('Moved to ' + result)
 
 
-deploy_to_factorio()
+if __name__ == "__main__":
+    deploy_to_factorio()
