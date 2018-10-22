@@ -36,7 +36,7 @@ for _, recipe in pairs(data.raw["recipe"]) do
 
       data:extend({add_smelting_recipe(output, {category = "lf-smelting", subgroup = "lf-smelting"}, ingredients, multiplier)})
     else
-      log("recipe -" .. recipe.anme .. "- has more than one output. Recipe will be ignored")
+      log("recipe -" .. recipe.name .. "- has more than one output. Recipe will be ignored")
     end
   end
 end
