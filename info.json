@@ -7,5 +7,5 @@
   "homepage": "https://github.com/Nanabell/Loader-Furnaces",
   "description": "Loader Furnaces that a built to smelt a full belt of input inserted via a loader. Should Support any kind of Loader.",
   "factorio_version": "0.16",
-	"dependencies": ["base >= 0.16.51", "?LoaderRedux >= 1.3.0", "?miniloader", "?boblogistics >= 0.16.23"]
+	"dependencies": ["base >= 0.16.51", "LoaderRedux >= 1.3.0", "?miniloader", "?boblogistics >= 0.16.23"]
 }
